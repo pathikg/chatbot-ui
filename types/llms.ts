@@ -18,10 +18,29 @@ export type OpenAILLMID =
 
 // Google Models
 export type GoogleLLMID =
-  | "gemini-pro" // Gemini Pro
-  | "gemini-pro-vision" // Gemini Pro Vision
-  | "gemini-1.5-pro-latest" // Gemini 1.5 Pro
+  // Gemini 2.5 Models (Latest - Most Advanced)
+  | "gemini-2.5-pro" // Gemini 2.5 Pro
+  | "gemini-2.5-pro-preview-tts" // Gemini 2.5 Pro TTS
+  | "gemini-2.5-flash" // Gemini 2.5 Flash
+  | "gemini-2.5-flash-preview-09-2025" // Gemini 2.5 Flash Preview
+  | "gemini-2.5-flash-image" // Gemini 2.5 Flash Image
+  | "gemini-2.5-flash-lite" // Gemini 2.5 Flash Lite
+  | "gemini-2.5-flash-lite-preview-09-2025" // Gemini 2.5 Flash Lite Preview
+  // Gemini 2.0 Models (Second Generation)
+  | "gemini-2.0-flash" // Gemini 2.0 Flash
+  | "gemini-2.0-flash-001" // Gemini 2.0 Flash Stable
+  | "gemini-2.0-flash-exp" // Gemini 2.0 Flash Experimental
+  | "gemini-2.0-flash-preview-image-generation" // Gemini 2.0 Flash Image
+  | "gemini-2.0-flash-live-001" // Gemini 2.0 Flash Live
+  | "gemini-2.0-flash-lite" // Gemini 2.0 Flash Lite
+  | "gemini-2.0-flash-lite-001" // Gemini 2.0 Flash Lite Stable
+  // Gemini 1.5 Models (Previous Generation)
   | "gemini-1.5-flash" // Gemini 1.5 Flash
+  | "gemini-1.5-pro" // Gemini 1.5 Pro
+  | "gemini-1.5-pro-latest" // Gemini 1.5 Pro Latest
+  // Legacy Models
+  | "gemini-pro" // Gemini Pro (Legacy)
+  | "gemini-pro-vision" // Gemini Pro Vision (Legacy)
 
 // Anthropic Models
 export type AnthropicLLMID =

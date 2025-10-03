@@ -1,5 +1,8 @@
 --------------- FILE ITEMS ---------------
 
+-- Ensure vector type is accessible
+SET search_path TO public, extensions;
+
 create table file_items (
   -- ID
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),

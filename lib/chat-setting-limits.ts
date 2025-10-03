@@ -46,9 +46,104 @@ export const CHAT_SETTING_LIMITS: Record<LLMID, ChatSettingLimits> = {
     MAX_CONTEXT_LENGTH: 200000
   },
 
-  // GOOGLE MODELS
+  // GOOGLE MODELS - All Gemini Models (Updated 01/2025)
   
+  // Gemini 2.5 Models (Latest Generation)
+  "gemini-2.5-pro": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 65536,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.5-pro-preview-tts": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 16000,
+    MAX_CONTEXT_LENGTH: 8000
+  },
+  "gemini-2.5-flash": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 65536,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.5-flash-preview-09-2025": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 65536,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.5-flash-image": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 32768,
+    MAX_CONTEXT_LENGTH: 32768
+  },
+  "gemini-2.5-flash-lite": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 65536,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.5-flash-lite-preview-09-2025": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 65536,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+
+  // Gemini 2.0 Models (Second Generation)
+  "gemini-2.0-flash": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.0-flash-001": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.0-flash-exp": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.0-flash-preview-image-generation": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 32000
+  },
+  "gemini-2.0-flash-live-001": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.0-flash-lite": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+  "gemini-2.0-flash-lite-001": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1048576
+  },
+
+  // Gemini 1.5 Models (Previous Generation)
   "gemini-1.5-flash": {
+    MIN_TEMPERATURE: 0.0,
+    MAX_TEMPERATURE: 1.0,
+    MAX_TOKEN_OUTPUT_LENGTH: 8192,
+    MAX_CONTEXT_LENGTH: 1040384
+  },
+  "gemini-1.5-pro": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
@@ -60,6 +155,8 @@ export const CHAT_SETTING_LIMITS: Record<LLMID, ChatSettingLimits> = {
     MAX_TOKEN_OUTPUT_LENGTH: 8192,
     MAX_CONTEXT_LENGTH: 1040384
   },
+
+  // Legacy Gemini Models
   "gemini-pro": {
     MIN_TEMPERATURE: 0.0,
     MAX_TEMPERATURE: 1.0,

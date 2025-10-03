@@ -145,6 +145,20 @@ export default function SetupPage() {
     const updatedProfile = await updateProfile(profile.id, updateProfilePayload)
     setProfile(updatedProfile)
 
+    // Fetch available models before redirecting
+    const data = await fetchHostedModels(updatedProfile)
+    if (data) {
+      setEnvKeyMap(data.envKeyMap)
+      setAvailableHostedModels(data.hostedModels)
+
+      if (updatedProfile["openrouter_api_key"] || data.envKeyMap["openrouter"]) {
+        const openRouterModels = await fetchOpenRouterModels()
+        if (openRouterModels) {
+          setAvailableOpenRouterModels(openRouterModels)
+        }
+      }
+    }
+
     const workspaces = await getWorkspacesByUserId(profile.user_id)
     const homeWorkspace = workspaces.find(w => w.is_home)
 
